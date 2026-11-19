@@ -1,8 +1,8 @@
 name: Sync from Shorebird
 on:
   schedule:
-    - cron: '0 3 * * *'      # 每天 3:00 UTC（北京 11:00）
-  workflow_dispatch: {}      # 支持手动触发
+    - cron: '0 3 * * *'
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -24,8 +24,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config checkout.defaultRemote origin
           for branch in shorebird/dev master beta dev; do
-            git checkout $branch
+            git checkout $branch 2>/dev/null || git checkout -b $branch --track origin/$branch
             git merge upstream/$branch --no-edit
             git push origin $branch
           done
