@@ -1,0 +1,31 @@
+name: Sync from Shorebird
+on:
+  schedule:
+    - cron: '0 3 * * *'      # 每天 3:00 UTC（北京 11:00）
+  workflow_dispatch: {}      # 支持手动触发
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/shorebirdtech/flutter.git || true
+          git fetch upstream --prune
+
+      - name: Merge and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for branch in shorebird/dev master beta dev; do
+            git checkout $branch
+            git merge upstream/$branch --no-edit
+            git push origin $branch
+          done
