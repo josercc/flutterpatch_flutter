@@ -14,10 +14,10 @@ vars = {
   'flutter_git': 'https://flutter.googlesource.com',
   'skia_git': 'https://skia.googlesource.com',
   'llvm_git': 'https://llvm.googlesource.com',
-  "dart_sdk_revision": "cb8e32b6feeea3cdbf12b10bb9d166e8bf7e9b28",
+  "dart_sdk_revision": "e4f65b2310a5976a579ff707ec7ebcb4106fa460",
   "dart_sdk_git": "git@github.com:shorebirdtech/dart-sdk.git",
   "updater_git": "https://github.com/shorebirdtech/updater.git",
-  "updater_rev": "91dbbddb958a397868c9d8db4742a10e0f2c3832",
+  "updater_rev": "3117aac6038fcfcfccb037748f9ef160229287b1",
   'dart_ai_rev': '9c96bfe5f091c9451eff5b59c9bffeb2e806b875',
   'skia_revision': '0e5d8d1be81b22f5529a41cf4810dd89b63527ba',
 
@@ -401,9 +401,9 @@ deps = {
     'objects': [
       {
         'object_name': Var('dart_sdk_revision') + '/dart-sdk-linux-x64.tar.gz',
-        'sha256sum': '8b999d507e14b1171e21ec843fc33668ae3252237346b8af4dfdd377401a1442',
-        'size_bytes': 265122529,
-        'generation': 1795063504698501,
+        'sha256sum': 'eed182e317effec7835d58a4099a9ac797271841810ba1b2eec8e7036957cb1e',
+        'size_bytes': 265193627,
+        'generation': 1795132372498863,
       }
     ],
     'dep_type': 'gcs',
@@ -414,9 +414,9 @@ deps = {
     'objects': [
       {
         'object_name': Var('dart_sdk_revision') + '/dart-sdk-linux-arm64.tar.gz',
-        'sha256sum': 'e83f97215cf5d75fbcd13451f54be574f3dd0db50cb5e769bb18e05996aa41a7',
-        'size_bytes': 261325162,
-        'generation': 1795064021888633,
+        'sha256sum': 'b5f38d9de4c11867b27eeaa69250a3fdeda311396fd4a62dd03994ae326143d9',
+        'size_bytes': 261391201,
+        'generation': 1795132929109140,
       }
     ],
     'dep_type': 'gcs',
@@ -427,9 +427,9 @@ deps = {
     'objects': [
       {
         'object_name': Var('dart_sdk_revision') + '/dart-sdk-darwin-x64.tar.gz',
-        'sha256sum': '83f3b0d7355ea43ba103ede0d15f31b5385c5f54c0e0aaeac2a96ee881b36cda',
-        'size_bytes': 237507934,
-        'generation': 1795063658139876,
+        'sha256sum': 'f94920843e3ae7e1e32e5751afb0054765a199c1fe5d1abeed98dcc6b4d28d54',
+        'size_bytes': 237544638,
+        'generation': 1795132458411460,
       }
     ],
     'dep_type': 'gcs',
@@ -440,9 +440,9 @@ deps = {
     'objects': [
       {
         'object_name': Var('dart_sdk_revision') + '/dart-sdk-darwin-arm64.tar.gz',
-        'sha256sum': '49b7a72b03a7da4be13e3de3e7f2c2590528d8bd103579906e8134387805e2ae',
-        'size_bytes': 234518132,
-        'generation': 1795063101272115,
+        'sha256sum': '2724458822b30fd462e09744382db463b3ba9ca6752072b243b2d7ad4177802e',
+        'size_bytes': 234537643,
+        'generation': 1795131955299637,
       }
     ],
     'dep_type': 'gcs',
@@ -453,9 +453,9 @@ deps = {
     'objects': [
       {
         'object_name': Var('dart_sdk_revision') + '/dart-sdk-windows-x64.tar.gz',
-        'sha256sum': '4e56df910aa37789e0d2b83b55f48fb776b40893338530f98836003b8505ff02',
-        'size_bytes': 230958426,
-        'generation': 1795063125467829,
+        'sha256sum': 'eb1649acaaf91d1379c5c9dfe349da33ae73a723360f2ef61569b020d71f5aed',
+        'size_bytes': 230980747,
+        'generation': 1795132613234895,
       }
     ],
     'dep_type': 'gcs',
@@ -466,9 +466,9 @@ deps = {
     'objects': [
       {
         'object_name': Var('dart_sdk_revision') + '/dart-sdk-windows-arm64.tar.gz',
-        'sha256sum': '6f29c57655711d746741eb408634626f80e6d5fb4ef0a1de36d30ca27bf67370',
-        'size_bytes': 166498563,
-        'generation': 1795063157872683,
+        'sha256sum': 'c50faa5f7ae07a3ded9ce6b9d632fb4780d9d3e36dd2f0b28f220bbf7ff407c7',
+        'size_bytes': 166523863,
+        'generation': 1795132333716455,
       }
     ],
     'dep_type': 'gcs',
